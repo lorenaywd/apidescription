@@ -1,0 +1,17 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+api_login:
+    path: /api/login
+    controller: App\Controller\SecurityController::login
+    methods: ['GET', 'POST'] 
+
+# api_login:
+#     path: /api/login
+
+add_description:
+    path: '/add_description'
+    controller: 'App\Controller\DescriptionController::addDescription'
